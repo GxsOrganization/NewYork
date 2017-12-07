@@ -29,7 +29,8 @@ pipeline {
         }
         stage('upstream'){
             steps{
-            build ' GxsOrganization/Florida/master'
+            build 'GxsOrganization/Florida/master'
+
             }
         }
     }
