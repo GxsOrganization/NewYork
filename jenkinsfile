@@ -24,6 +24,12 @@ pipeline {
             steps {
                 sh 'ls'
                 sh 'pwd'
+                
+            }
+        }
+        stage('upstream'){
+            steps{
+            build ' GxsOrganization/Florida/master'
             }
         }
     }
